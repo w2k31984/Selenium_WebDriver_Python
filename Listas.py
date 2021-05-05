@@ -1,5 +1,6 @@
 #limite= int(input('Introduzca el limite: '))
 #Listas en Python arrays o list almacenan valores de diferente tipo no son extralimitadas.
+#Palabra list o []
 a=['Coche', 1, 'Hola', 2, 'Agua', 3,2.5,9, 'Hielo', 4.9,True, False,3.7, 43,19.5,'Cecilia','Gasolina',5.29]
 #print(a)
 
