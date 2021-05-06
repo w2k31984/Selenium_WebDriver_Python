@@ -4,7 +4,7 @@ a = {'persona':'Cristian Parada','fruta':'Guineo','color':'Azul','edad':20, 'fec
 #for i in a:
 #    print(a[i])
 # La funcion para poder hacer un contenido de un diccionario es dict
-b = dict(nombre='Cristian Menendez', color='negro',fruta='Mango')
+b = dict(nombre='Cristian Menendez', color='negro',fruta='Mango',ciudad='Berlin',telefono=77687265)
 print(b)
 
 # La funcion zip convierte un numero de elementos en un diccionario
@@ -22,3 +22,4 @@ print(b)
 
 #Valor de un objeto de diccionario
 print(b.get('nombre'))
+print(b.get('telefono'))
