@@ -13,7 +13,7 @@ def main():
     configuracion.sections()
 
     webdri = configuracion['General']['chrome']
-    web = configuracion['Paginas']['Pagina1']
+    web = configuracion['Paginas']['pagina1']
 
     driver = webdriver.Chrome(executable_path='../Selenium_WebDriver/chromedriver.exe')
     driver.get(web)
