@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 #Agregando argumentos de trabajo
 options = Options()
-options.add_argument('--headless') #Con esta linea abrimos el navegador en 2o Plano
+options.add_argument('--headless') #Con esta linea abrimos el navegador en 2o Plano palabra reservada headless
 
 def main():
     configuracion = configparser.ConfigParser()
