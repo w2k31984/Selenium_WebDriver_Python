@@ -5,9 +5,9 @@ import time
 
 def take_screenshot(url, save_fn="captura3.png"):
 
-    browser = webdriver.Chrome(executable_path='../Selenium_WebDriver/chromedriver.exe')  # WebDriver Local con Chrome
-    browser.set_window_size(1200, 900) #1200,900 valores originales
-    browser.get(url)  # Load page
+    browser = webdriver.Chrome(executable_path='../Selenium_WebDriver/chromedriver.exe')  # WebDriver Local con Chrome.
+    browser.set_window_size(1200, 900) #1200,900 valores originales estos se pueden cambiar a conveniencia de la captura que se requiere.
+    browser.get(url)  # Carga de la pagina web
     browser.execute_script("""
         (function () {
             var y = 0;
@@ -34,7 +34,6 @@ def take_screenshot(url, save_fn="captura3.png"):
 
     browser.save_screenshot(save_fn)
     browser.close()
-
 
 if __name__ == "__main__":
     take_screenshot("https://www.google.com/")
