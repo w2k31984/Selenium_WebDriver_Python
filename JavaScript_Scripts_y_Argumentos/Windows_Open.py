@@ -1,7 +1,6 @@
-from selenium import webdriver
 import time
 import configparser
-
+from selenium import webdriver
 
 def main():
     configuracion = configparser.ConfigParser()
@@ -13,9 +12,9 @@ def main():
 
     driver = webdriver.Chrome(executable_path='../Selenium_WebDriver/chromedriver.exe')
     driver.get(web)
-    time.sleep(2)
-    #Realizar funciones de JS para mostrar mensaje en el navegador.
-    driver.execute_script('alert("Hola usted esta recibiendo este mensaje desde python")')
+
+    #Abrir nueva ventana
+    driver.execute_script('window.open("https://www.bing.com/")')
     input()
     driver.quit()
 
