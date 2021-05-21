@@ -9,19 +9,19 @@ from selenium import webdriver
 class MyTest(unittest.TestCase):
     def test_web(self):
         configuracion = configparser.ConfigParser()
-        configuracion.read('../Selenium_WebDriver/config.ini')
+        configuracion.read('config.ini')
         configuracion.sections()
 
         webdri = configuracion['General']['chrome']
         web = configuracion['Paginas']['pagina1']
 
-        driver = webdriver.Chrome(executable_path='../Selenium_WebDriver/chromedriver.exe')
+        driver = webdriver.Chrome(executable_path=webdri)
         driver.get(web)
         driver.execute_script('prompt("Introduce tu nombre: ", "Cristian SkinWalker")')
         alerta = driver.switch_to_alert()
-        time.sleep(2)
+        time.sleep(3)
         alerta.accept()
-        time.sleep(2)
+        time.sleep(3)
 
 if __name__ == '__main__':
     unittest.main()
